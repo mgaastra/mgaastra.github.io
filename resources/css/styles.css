@@ -1,158 +1,134 @@
-/** {
-    border: 2px solid red;
-}*/
-
-html {
-    font-family: Helvetica;
-    font-size: 22px;
-    color: seashell;
-    background-color: black;
-    opacity: 0.9;
-    margin: 0;
-
-
+* {
+    border: 1px solid red;
 }
+
+
 
 body {
-    margin: 0;
-}
-
-.logo {
-    height: 50px;
-    text-align: left;
-    margin-left: 10px;
-
-
-}
-
-nav {
-    height: 69px;
     display: flex;
-    align-items: center;
-    border-bottom: 1px solid seashell;
-    position: sticky;
-    margin: 0;
-    top: 0;
-    background-color: black;
-
-
-
-}
-
-nav a {
-
-    color: seashell;
-    margin: 10px;
-
-
-}
-
-.navLink {
-
-    margin-left: auto;
-}
-
-.bannerContainer {
-    display: flex;
-    align-items: center;
-    background-image: url("../images/img-mission-background.jpg");
-    height: 700px;
-    width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.banner {
-    display: flex;
-    align-items: center;
-    text-align: center;
     justify-content: center;
     flex-direction: column;
-    max-height: 185px;
-    width: 1200px;
-    margin: 0 auto;
-    background-color: black;
+    align-items: center;
+    font-family: Helvetica, Arial, sans-serif;
+
+
+
+}
+
+.example {
+    background-image: url(../images/roads-logo.svg);
+    width: 10vh;
+    height: 10vh;
+    background-size: cover;
+    border-radius: 0.8vh;
+    border: 0.2vh solid grey;
+}
+
+h1 {
+    
+    text-align: center;
+    font-size: 8vh;
+    margin-bottom: 5vh;
+
+}
+h2{
+    margin: 0;
+}
+
+.outsideContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
     
 }
 
-h2,
-h4 {
-    background-color: black;
-    margin-top: 20px;
-    margin-bottom:20px;
-}
-
-.teaContainer3 {
+.buttoms {
     display: flex;
-    max-width: 1000px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-
-
-}
-
-.teaContainer2 {
-    display: flex;
-    max-width: 650px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-
-}
-
-.teaPictures {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: row;    
+    margin: 5vh;
+    font-size: 5vh;
     align-items: center;
-    justify-content: space-between;
-
+    
 }
 
-img {
-    display: block;
-    margin: 0;
-    padding: 0;
 
-}
 
-figcaption {
-    margin-top: 10px;
+#reset,
+#shuffle {
+    margin: 2vh;
+    
+    background-color: grey;
+    border-radius: 2vh;
+    border: 0.5vh solid grey;
+    color: whitesmoke;
+    padding: .5vh 1.5vh;
+    cursor: pointer;
     text-align: center;
+    
 }
 
-figure {
-    padding: 0;
+.puzzleContainer {
+    
+    display: grid;
+    gap: 0.2vh;
+    grid-template: repeat(4,1fr) / repeat(4,1fr)  ;
+    width: 40vh;
+    height: 40vh;
     margin: 0;
+    background-color: grey;
+    border-radius: 0.8vh;
+    border: 0.2vh solid grey;
+    
+    
 }
 
 
 
-
-
-
-.locations {
-    display: flex;
-
+.puzzleContainer img {
+    border-radius: 0.8vh;
+    
+    cursor: pointer;
+    height: 10vh;   
+    object-fit: contain;
 }
 
-.contact {
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    max-height: 200px;
-
+#tile1 {
+    background-image: url(../images/roads-logo.svg);
+    border-radius: 0.8vh;
+    background-size: 40vh 40vh;
+    cursor: pointer;
+    /*overflow: hidden;*/
+    background-position: left -10vh top 0vh;
+    background-repeat: no-repeat;
+    width:10vh;
+    height:10vh;
+    z-index: 5;
 }
 
-footer {
-    text-align: left;
+#tile2 {
+    background-image: url(../images/roads-logo.svg);
+    border-radius: 0.8vh;
+    background-size: 40vh 40vh;
+    cursor: pointer;
+    /*overflow: hidden;*/
+    background-position: left -20vh top 0vh;
+    background-repeat: no-repeat;
+    width:10vh;
+    height:10vh;
+    z-index: 5;
 }
 
-footer h5 {
-    margin-left: 20px;
+#tile3 {
+    background-image: url(../images/roads-logo.svg);
+    border-radius: 0.8vh;
+    background-size: 40vh 40vh;
+    cursor: pointer;
+    /*overflow: hidden;*/
+    background-position: left -30vh top 0vh;
+    background-repeat: no-repeat;
+    width:10vh;
+    height:10vh;
+    z-index: 5;
 }
