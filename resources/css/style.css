@@ -1,0 +1,29 @@
+* {
+    border: red 2px solid;
+    
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+.content-container {
+    width: 75%;
+}
+
+.menu-item {
+    display: block;
+    padding: 10px;
+}
+
+.menu-icon {
+    padding: 5px;
+    color: green;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+nav {
+    width: 25%
+}
