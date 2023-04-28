@@ -20,6 +20,7 @@ html {
 main {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     padding: 5vh;
 }
@@ -31,8 +32,8 @@ main h1{
 
 body {
     margin: 0;
-    font-family: 'Roboto' , Arial,  sans-serif;
     background-color: whitesmoke;
+    font-family: 'Roboto' , Arial,  sans-serif;
     color:rgb(56, 62, 66);
     padding: 0;
     border: none;
@@ -42,6 +43,7 @@ body {
 
 .content-container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     padding-left:10vw;
@@ -61,7 +63,7 @@ body {
 .menu-icon {
     padding: 5px;
     color: whitesmoke;
-    font-size: 4vh;
+    font-size: 2rem;
     font-weight: 200;
     margin: 10px;
 }
@@ -90,6 +92,11 @@ nav a{
     
 }
 
+.menu-item:hover{
+    background-color: rgba(245, 245, 245,0.2);
+    
+}
+
 nav p{
     margin-bottom: 20px;
     font-size: 1rem;
@@ -106,13 +113,24 @@ nav i{
 
 #about-me {
     display: flex;
+    flex-wrap: no-wrap;
     justify-items: center;
+}
+
+#about-me-content {
+    display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
 }
 
 
 
-#about-me p{
+
+
+#about-me-content p{
     margin-top: 1rem;
+    text-align: left;
 }
 
 
@@ -125,3 +143,86 @@ nav i{
     margin-top: 1rem;
     
 }
+
+button {
+    font-family: 'Roboto' , Arial,  sans-serif;
+    color:rgb(56, 62, 66);
+    border: 2px solid rgb(56, 62, 66);
+    background-color: rgb(245, 245, 245);
+    border-radius: 4px;
+    padding: 10px 0px;
+    margin-bottom: 16px;
+    
+    
+    
+
+}
+
+button:hover{
+    background-color: rgb(56, 62, 66) ;
+    opacity: 0.8;
+    color:whitesmoke;
+}
+
+button:active{
+    color:rgb(56, 62, 66);
+    border: 2px solid rgb(56, 62, 66);
+    background-color: rgb(245, 245, 245);
+    opacity: 1;
+}
+
+.page-icons{
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 10px;
+}
+
+#contact i:hover{
+    opacity: 0.8;
+}
+
+#contact i:active{
+    opacity: 1;
+}
+
+
+  
+    @media only screen and (max-width: 1045px){
+        h1,h2,h3,p{
+            text-align: center;
+        }
+
+        #projects {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #about-me {
+            flex-wrap: wrap;
+        }
+    
+        #photo {
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+
+       #skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+       }
+
+       #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+
+      
+
+
+    }
