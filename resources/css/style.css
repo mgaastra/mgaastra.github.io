@@ -131,6 +131,7 @@ nav i{
 #about-me-content p{
     margin-top: 1rem;
     text-align: left;
+    font-size: 1rem;
 }
 
 
@@ -150,7 +151,7 @@ nav i{
     background-color: rgb(56, 62, 66);
     position: sticky;
     top: 25vh;
-    display: flex;
+    display: none;
     color: whitesmoke;
     text-align: center;
     margin: auto;
@@ -188,6 +189,7 @@ button {
     border-radius: 4px;
     padding: 10px 0px;
     margin-bottom: 16px;
+    font-size: 1rem;
 }
 
 button:hover{
