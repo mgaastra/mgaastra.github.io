@@ -18,10 +18,13 @@
       href="resources/fontawesome/css/solid.css"
       type="text/css"
     />
+    <script src="./resources/js/jokeGenerator.js" defer></script>
+    <script src="./resources/js/closeButton.js" defer></script>
   </head>
   <body>
     
       <nav>
+        
         <a href="#" class="menu-item">
           <i class="fa-solid fa-house menu-icon"></i>
           <p>Home</p></a
@@ -45,6 +48,10 @@
     
     
     <div class="content-container">
+      <div id="joke-container">
+        <i class="fa-solid fa-xmark close-button" id="close-joke"></i>
+        <p id="joke-text"></p>
+      </div>
       <main>
         <h1>Mathijs Gaastra</h1>
         <h2>Webdeveloper</h2>
@@ -87,9 +94,12 @@
             <p>
               I can be serious and hard working, but I also like to joke around from time to time.
             </p>
-            <button id="jokeButton">Tell me a joke</button>
+            <button id="joke-button">Tell me a joke</button>
             </div>
             <img id="photo" src="./resources/images/Mathijs.webp"/>
+        </div>
+        
+
         </div>
         
         
@@ -127,5 +137,7 @@
         <p>&copy; Mathijs Gaastra 2023</p>
       </footer>
     </div>
+
+    
   </body>
 </html>

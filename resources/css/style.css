@@ -144,6 +144,42 @@ nav i{
     
 }
 
+#joke-container {
+    width: 60vw;
+    height: 50vh;
+    background-color: rgb(56, 62, 66);
+    position: sticky;
+    top: 25vh;
+    display: flex;
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    
+    
+}
+
+#joke-container p {
+    margin: auto;
+    padding:0 5vw;
+}
+
+.close-button{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 10px 20px;
+}
+
+.close-button:hover {
+    background-color: red;
+}
+
+.close-button:active {
+    opacity: 0.7;
+}
+
 button {
     font-family: 'Roboto' , Arial,  sans-serif;
     color:rgb(56, 62, 66);
@@ -152,10 +188,6 @@ button {
     border-radius: 4px;
     padding: 10px 0px;
     margin-bottom: 16px;
-    
-    
-    
-
 }
 
 button:hover{
