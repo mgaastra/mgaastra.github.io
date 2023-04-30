@@ -41,6 +41,7 @@ body {
     
 }
 
+
 .content-container {
     display: flex;
     flex-wrap: wrap;
@@ -87,13 +88,18 @@ nav a{
     color: whitesmoke;
     text-decoration: none;
     text-align: center;
-    
-    
+     
     
 }
 
+
 .menu-item:hover{
     background-color: rgba(245, 245, 245,0.2);
+    
+}
+
+.menu-item:active{
+    background-color: rgb(56, 62, 66);
     
 }
 
@@ -109,6 +115,10 @@ nav p{
 
 nav i{
     margin-bottom: 0 ;
+}
+
+#about-me-section {
+    margin-bottom: 5vh;
 }
 
 #about-me {
@@ -134,18 +144,23 @@ nav i{
     font-size: 1rem;
 }
 
-
-
-#photo {
+#photo-mobile {
+    display:none;
     
+}
+
+#photo-web {
+    display: block;
     width: auto;
     max-height: 300px;
     margin-left: 1rem;
     margin-top: 1rem;
+    object-fit: contain;
     
 }
 
 #joke-container {
+    z-index: 2;
     width: 60vw;
     height: 50vh;
     background-color: rgb(56, 62, 66);
@@ -205,11 +220,39 @@ button:active{
     opacity: 1;
 }
 
+#projects {
+    margin-bottom: 5vh;
+}
+
+#projects a:link{
+    color:rgb(56, 62, 66);
+}
+
+#projects a:visited{
+    color:rgb(56, 62, 66);
+}
+
+#projects a:hover{
+    color:rgba(56, 62, 66,0.7);
+}
+
+#projects a:active{
+    color:rgb(56, 62, 66);
+}
+
+#skills {
+    margin-bottom: 5vh;
+}
+
 .page-icons{
     padding: 5px;
     font-size: 2rem;
     font-weight: 200;
     margin: 10px;
+}
+
+#contact {
+    margin-bottom: 5vh;
 }
 
 #contact i:hover{
@@ -220,9 +263,17 @@ button:active{
     opacity: 1;
 }
 
+footer{
+    margin-bottom: 5vh;
+}
+
 
   
     @media only screen and (max-width: 1045px){
+        html {
+            font-size: 24px;
+        }
+
         h1,h2,h3,p{
             text-align: center;
         }
@@ -232,11 +283,12 @@ button:active{
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            
         }
 
         #about-me {
             flex-wrap: wrap;
-        }
+            }
     
         #photo {
             margin: 0 auto;
@@ -256,7 +308,25 @@ button:active{
         align-items: center;
        }
 
-      
+    #about-me-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #photo-mobile {
+        display:block;
+        width: auto;
+        max-height: 300px;
+        object-fit: contain;
+        padding-bottom: 5vh;
+        
+    }
+    
+    #photo-web {
+        display: none;
+               
+    }
 
 
     }
