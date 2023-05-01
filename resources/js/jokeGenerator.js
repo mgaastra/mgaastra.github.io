@@ -1,5 +1,5 @@
 function tellAJoke() {
-  const randJoke = Math.floor(Math.random() * 3);
+  const randJoke = Math.floor(Math.random() * 7);
   switch (randJoke) {
     case 0:
       return "Don't use \"beef stew\" as a computer password. It's not stroganoff.";
@@ -10,6 +10,15 @@ function tellAJoke() {
     case 2:
       return "Whoever said that the definition of insanity is doing the same thing over and over again and expecting different results has obviously never had to reboot a computer. —William Petersen";
       break;
+    case 3:
+      return "Where did the software developer go? He probably ransomware!";
+    case 4:
+      return "Database Admins walked into a NoSQL bar. A little later, they walked out because they couldn’t find a table.";
+
+    case 5:
+      return "Why did the geek add body { padding-top: 1000px; } to his Facebook profile? He wanted to keep a low profile.";
+    case 6:
+      return "Programmer’s girlfriend: “Are you going to sit and type in front of that thing all day or are you going out with me? Programmer: Yes.";
   }
 }
 
