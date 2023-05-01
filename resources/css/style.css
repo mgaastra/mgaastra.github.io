@@ -22,7 +22,7 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding: 36px;
+  margin-top: 3rem;
 }
 
 h1 {
@@ -132,7 +132,8 @@ nav i {
 }
 
 #about-me-section {
-  margin-bottom: 36px;
+  margin-top: 8rem;
+  scroll-margin-top: 5rem;
 }
 
 #about-me {
@@ -222,7 +223,9 @@ button:active {
 }
 
 #projects {
-  margin-bottom: 36px;
+  margin-top: 8rem;
+  /*margin-bottom: 36px;*/
+  scroll-margin-top: 5rem;
 }
 
 #projects a:link {
@@ -242,7 +245,8 @@ button:active {
 }
 
 #skills {
-  margin-bottom: 36px;
+  margin-top: 8rem;
+  scroll-margin-top: 5rem;
 }
 
 .page-icons {
@@ -253,16 +257,8 @@ button:active {
 }
 
 #contact {
-  margin-bottom: 36px;
+  margin-top: 8rem;
 }
-
-/*#contact i:hover {
-  opacity: 0.8;
-}
-
-#contact i:active {
-  opacity: 1;
-}*/
 
 #contact a:link {
   color: rgb(56, 62, 66);
@@ -281,7 +277,8 @@ button:active {
 }
 
 footer {
-  margin-bottom: 36px;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 1045px) {
