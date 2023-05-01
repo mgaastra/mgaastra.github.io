@@ -13,30 +13,28 @@ function tellAJoke() {
   }
 }
 
-
-const jokeButton = document.getElementById('joke-button');
-const jokeContainer = document.getElementById('joke-container');
-const jokeText = document.getElementById('joke-text');
-const closeButton = document.getElementById('close-joke');
+const jokeButton = document.getElementById("joke-button");
+const jokeContainer = document.getElementById("joke-container");
+const jokeText = document.getElementById("joke-text");
+const closeButton = document.getElementById("close-joke");
 
 function showJoke() {
-  
-  jokeContainer.style.display = 'flex';
+  jokeContainer.style.display = "flex";
   jokeText.innerHTML = tellAJoke();
 }
 
 function closeJoke() {
-  jokeContainer.style.display = 'none';
+  jokeContainer.style.display = "none";
 }
 
-jokeButton.addEventListener('click',showJoke);
-jokeButton.addEventListener('touch',showJoke);
+jokeButton.addEventListener("click", showJoke);
+jokeButton.addEventListener("touch", showJoke);
 
-closeButton.addEventListener('click',closeJoke);
-closeButton.addEventListener('click',closeJoke);
+closeButton.addEventListener("click", closeJoke);
+closeButton.addEventListener("touch", closeJoke);
 
 //close joke on esc keydown
-document.addEventListener('keydown',(e) => {
+document.addEventListener("keydown", (e) => {
   if (e.key == "Escape") {
     closeJoke();
   }
