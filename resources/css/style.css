@@ -22,7 +22,7 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 h1 {
@@ -132,7 +132,7 @@ nav i {
 }
 
 #about-me-section {
-  margin-top: 8rem;
+  margin-top: 1rem;
   scroll-margin-top: 5rem;
 }
 
@@ -223,7 +223,7 @@ button:active {
 }
 
 #projects {
-  margin-top: 8rem;
+  margin-top: 1rem;
   /*margin-bottom: 36px;*/
   scroll-margin-top: 5rem;
 }
@@ -245,7 +245,7 @@ button:active {
 }
 
 #skills {
-  margin-top: 8rem;
+  margin-top: 1rem;
   scroll-margin-top: 5rem;
 }
 
@@ -257,7 +257,7 @@ button:active {
 }
 
 #contact {
-  margin-top: 8rem;
+  margin-top: 1rem;
 }
 
 #contact a:link {
@@ -277,8 +277,18 @@ button:active {
 }
 
 footer {
-  margin-top: 8rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1045px) and (orientation: landscape) {
+    #hamburger-container {
+      height: 15vh;
+    }
+
+    #hamburger i {
+      margin: 1rem;
+    }
 }
 
 @media only screen and (max-width: 1045px) {
