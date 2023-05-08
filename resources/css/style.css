@@ -281,15 +281,6 @@ footer {
   margin-bottom: 2rem;
 }
 
-@media only screen and (max-width: 1045px) and (orientation: landscape) {
-    #hamburger-container {
-      height: 15vh;
-    }
-
-    #hamburger i {
-      margin: 1rem;
-    }
-}
 
 @media only screen and (max-width: 1045px) {
   h1,
@@ -362,5 +353,25 @@ footer {
 
   #photo-web {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 1045px) and (orientation: landscape) {
+  #hamburger-container {
+    height: 15vh;
+  }
+
+  #hamburger i {
+    margin: 1rem;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+    top: 15vh;
+  }
+
+  .menu-item {
+    padding: 0;
   }
 }
