@@ -133,7 +133,11 @@ nav i {
 
 #about-me-section {
   margin-top: 1rem;
-  scroll-margin-top: 5rem;
+  
+}
+
+#about-me-title {
+  scroll-margin-top: 7rem;
 }
 
 #about-me {
